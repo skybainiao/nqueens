@@ -11,35 +11,22 @@ public class test2
     if (n == 7){
       return "7:1";
     }
+
+    // TODO: 11/05/2022 recursive method
     if (n < 10){
+      int e = n/7;
       n = n%7;
-      return "1:"+n+" 7:1";
+      return Sum(n)+" 7:"+e;
     }
     if (n == 10){
       return "10:1";
     }
+
+    // TODO: 11/05/2022 recursive method
     if (n < 22){
       int e = n/10;
       n = n%10;
-      if (n < 7 && e == 1){
-        return "1:"+n+" 10:1";
-      }
-      if (n == 7 && e == 1){
-        return "7:1"+" 10:1";
-      }
-      if (n < 9 && e == 1){
-        n = n%7;
-        return "1:"+n+" 7:1"+" 10:1";
-      }
-      if (n == 9 && e == 1){
-        return "1:2"+" 7:1"+" 10:1";
-      }
-      if (e == 2 && n != 0){
-        return "1:"+n+" 10:2";
-      }
-      if (e == 2 && n == 0){
-        return "10:2";
-      }
+      return Sum(n)+" 10:"+e;
     }
     if (n == 22){
       return "22:1";
@@ -61,6 +48,6 @@ public class test2
   {
     test2 t2 = new test2();
 
-    System.out.println(t2.Sum(600));
+    System.out.println(t2.Sum(156));
   }
 }
