@@ -21,6 +21,9 @@ public class test2
     if (n == 10){
       return "10:1";
     }
+    if (n == 20){
+      return "20:1";
+    }
 
     // TODO: 11/05/2022 recursive method
     if (n < 22){
@@ -39,7 +42,7 @@ public class test2
       return Sum(n)+" 22:"+e;
     }
 
-    return "null";
+    return "error";
 
   }
 
@@ -48,6 +51,6 @@ public class test2
   {
     test2 t2 = new test2();
 
-    System.out.println(t2.Sum(156));
+    System.out.println(t2.Sum(146));
   }
 }
