@@ -11,6 +11,15 @@ public class test2
     if (n == 7){
       return "7:1";
     }
+    if (n == 10){
+      return "10:1";
+    }
+    if (n == 20){
+      return "20:1";
+    }
+    if (n == 22){
+      return "22:1";
+    }
 
     // TODO: 11/05/2022 recursive method
     if (n < 10){
@@ -18,21 +27,12 @@ public class test2
       n = n%7;
       return Sum(n)+" 7:"+e;
     }
-    if (n == 10){
-      return "10:1";
-    }
-    if (n == 20){
-      return "20:1";
-    }
 
     // TODO: 11/05/2022 recursive method
     if (n < 22){
       int e = n/10;
       n = n%10;
       return Sum(n)+" 10:"+e;
-    }
-    if (n == 22){
-      return "22:1";
     }
 
     // TODO: 11/05/2022 recursive method
@@ -43,7 +43,6 @@ public class test2
     }
 
     return "error";
-
   }
 
 
